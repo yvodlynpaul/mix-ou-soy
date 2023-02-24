@@ -1,0 +1,48 @@
+:root{
+    --bgColor:#24252a;
+    --bgColor1:#1b1b2b;
+    --bgColor2: rgba(0,0,0);
+    --bgColor3:rgba(0,0,0,0.5);
+    --bgColor4:#fff;
+    --btnColor1:#999;
+    --btnHoverColor:#1b1b1b;
+}
+
+*{
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .25s;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+    -moz-transition-property: all;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+body{
+    /*background: var(--bgColor1);*/
+    background-color: var(--bgColor);
+    padding: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+}
+
+.menu{
+    text-align: center;
+}
+
+.btn{
+    color: var(--btnColor1);
+    background: var(--bgColor2);
+    padding: 10px 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    border: none;
+    background: var(--bgColor3);
+    background: var(--bgColor4);
+    padding: 20px 20px;
+    color: var(--btnHoverColor);
+}
