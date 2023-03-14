@@ -1,33 +1,32 @@
 :root{
-    --bgColor:#24252a;
+    --bgColor: #24252A;
     --bgColor1:#1b1b2b;
-    --bgColor2: rgba(0,0,0);
-    --bgColor3:rgba(0,0,0,0.5);
+    --bgColor2:rgba(0, 0, 0, .5);
+    --bgColor3:rgba(0, 0, 0,.4);
     --bgColor4:#fff;
     --btnColor1:#999;
     --btnHoverColor:#1b1b1b;
 }
 
+
 *{
     -webkit-transition-property: all;
-    -webkit-transition-duration: .25s;
+    -webkit-transition-duration: .2s;
     -moz-transition-timing-function: cubic-bezier(100,50,21,6);
     -moz-transition-property: all;
     -moz-transition-timing-function: cubic-bezier(100,50,21,6);
 }
 
 body{
-    /*background: var(--bgColor1);*/
-    background-color: var(--bgColor);
-    padding: 25px;
-    text-align: center;
+    background:var(--bgColor) url("computer.jpg") no-repeat;
+    padding:25px;
+    text-align:center;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    height: 100vh;
-}
+  }
 
 .menu{
-    text-align: center;
+    text-align:center;
 }
 
 .btn{
@@ -42,7 +41,7 @@ body{
 .btn:hover{
     border: none;
     background: var(--bgColor3);
-    background: var(--bgColor4);
+    background: var(--bgColor4);;
     padding: 20px 20px;
     color: var(--btnHoverColor);
 }
