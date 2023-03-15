@@ -1,0 +1,56 @@
+body{
+    background-image:url("computer.jpg");
+}
+
+.menu {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .menu * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .menu li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+  }
+  .menu a {
+    padding: 0.3em 0;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+  }
+  .menu a:before,
+  .menu a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .menu a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #22c9e6;
+  }
+  .menu a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: #fff;
+    white-space: nowrap;
+  }
+  .menu li:hover a,
+  .menu .active a {
+    transform: translateY(100%);
+  }
